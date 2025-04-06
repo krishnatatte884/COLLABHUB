@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Profile | CollabHub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between">
+        <div class="flex space-x-7">
+          <a href="index.html" class="flex items-center py-4 px-2">
+            <span class="font-semibold text-gray-500 text-lg">CollabHub</span>
+          </a>
+        </div>
+        <div class="hidden md:flex items-center space-x-1">
+          <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Home</a>
+          <a href="projects.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Projects</a>
+          <a href="create-profile.html" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold">Create Profile</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Profile Form -->
+  <div class="max-w-2xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-bold text-center mb-8">Create Your Profile</h1>
+    
+    <form id="profileForm" class="bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4">
+      <div class="mb-6">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+          Full Name <span class="text-red-500">*</span>
+        </label>
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+          id="name" type="text" placeholder="John Doe" required>
+      </div>
+
+      <div class="mb-6">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+          Email <span class="text-red-500">*</span>
+        </label>
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+          id="email" type="email" placeholder="john@example.com" required>
+      </div>
+
+      <div class="mb-6">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="image">
+          Profile Image URL <span class="text-red-500">*</span>
+        </label>
+        <div class="flex items-center space-x-4">
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+            id="image" type="url" placeholder="https://images.pexels.com/photo.jpg" required>
+          <button type="button" id="previewBtn" class="bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 rounded">
+            Preview
+          </button>
+        </div>
+        <div id="imagePreview" class="mt-4 hidden">
+          <img id="previewImage" src="" alt="Profile preview" class="w-32 h-32 rounded-full object-cover border-2 border-gray-200">
+        </div>
+      </div>
+
+      <div class="mb-6">
+        <label class="block text-gray-700 text-sm font-bold mb-2">
+          Skills <span class="text-red-500">*</span>
+        </label>
+        <div class="flex flex-wrap gap-2 mb-2" id="skillsContainer"></div>
+        <div class="flex">
+          <input class="shadow appearance-none border rounded-l w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+            id="skillInput" type="text" placeholder="Add a skill (e.g. JavaScript)">
+          <button type="button" id="addSkillBtn" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-r">
+            Add
+          </button>
+        </div>
+        <p class="text-gray-500 text-xs italic mt-1">Add at least 3 skills</p>
+      </div>
+
+      <div class="mb-6">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="interests">
+          Interests <span class="text-red-500">*</span>
+        </label>
+        <select id="interests" multiple class="shadow border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-auto" required>
+          <option value="Web Development">Web Development</option>
+          <option value="Mobile Development">Mobile Development</option>
+          <option value="AI/ML">AI/ML</option>
+          <option value="Data Science">Data Science</option>
+          <option value="UI/UX Design">UI/UX Design</option>
+          <option value="Product Management">Product Management</option>
+          <option value="Business Development">Business Development</option>
+          <option value="Marketing">Marketing</option>
+        </select>
+        <p class="text-gray-500 text-xs italic mt-1">Hold Ctrl/Cmd to select multiple</p>
+      </div>
+
+      <div class="flex items-center justify-between">
+        <button type="submit" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+          Create Profile
+        </button>
+        <a href="index.html" class="inline-block align-baseline font-bold text-sm text-gray-500 hover:text-gray-800">
+          Cancel
+        </a>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/profile-form.js"></script>
+</body>
+</html>
