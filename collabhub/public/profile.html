@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Profile | CollabHub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between">
+        <div class="flex space-x-7">
+          <a href="index.html" class="flex items-center py-4 px-2">
+            <span class="font-semibold text-gray-500 text-lg">CollabHub</span>
+          </a>
+        </div>
+        <div class="hidden md:flex items-center space-x-1">
+          <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Home</a>
+          <a href="projects.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Projects</a>
+          <a href="profile.html" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold">Profile</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Profile Section -->
+  <div class="max-w-4xl mx-auto px-4 py-12">
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <!-- Profile Header -->
+      <div class="bg-gradient-to-r from-green-400 to-blue-500 p-6 text-white">
+        <div class="flex flex-col md:flex-row items-center">
+          <img id="profileImage" src="" alt="Profile" class="w-32 h-32 rounded-full border-4 border-white object-cover shadow-lg">
+          <div class="md:ml-8 mt-4 md:mt-0 text-center md:text-left">
+            <h1 id="profileName" class="text-3xl font-bold"></h1>
+            <p id="profileEmail" class="text-white opacity-90"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile Details -->
+      <div class="p-6">
+        <div class="mb-8">
+          <h2 class="text-xl font-semibold mb-4 text-gray-700">Skills</h2>
+          <div class="flex flex-wrap gap-2" id="profileSkills">
+            <!-- Skills will be populated by JavaScript -->
+          </div>
+        </div>
+
+        <div class="mb-8">
+          <h2 class="text-xl font-semibold mb-4 text-gray-700">Interests</h2>
+          <div class="flex flex-wrap gap-2" id="profileInterests">
+            <!-- Interests will be populated by JavaScript -->
+          </div>
+        </div>
+
+        <div class="flex justify-end">
+          <a href="create-profile.html" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+            Edit Profile
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/profile-view.js"></script>
+</body>
+</html>
