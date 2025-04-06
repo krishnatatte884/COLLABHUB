@@ -1,0 +1,112 @@
+{
+  "profiles": [
+    {
+      "id": 1,
+      "name": "Alex Johnson",
+      "email": "alex@example.com",
+      "skills": [
+        "JavaScript",
+        "React",
+        "Node.js"
+      ],
+      "interests": [
+        "Web Development",
+        "AI"
+      ],
+      "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Sam Lee",
+      "email": "sam@example.com",
+      "skills": [
+        "UI/UX Design",
+        "Figma"
+      ],
+      "interests": [
+        "Product Design",
+        "Frontend"
+      ],
+      "image": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Krishna Tatte",
+      "email": "krishnnna08@gmail.com",
+      "image": "https://images.app.goo.gl/h8gE9Xe5RBW",
+      "skills": [
+        "sdhjkuvnbdkubfgh,fnsdjfhebnjr,ndjhbgfgwier",
+        "vjdixfgndifurjn",
+        "fjsengvdijundgi"
+      ],
+      "interests": [
+        "Product Management"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Krishna Tatte",
+      "email": "krishnnna08@gmail.com",
+      "image": "https://images.app.goo.gl/h8gE9Xe5RBWCKZxn6",
+      "skills": [
+        "Geetha",
+        "erthtfhjj",
+        "gndrhbr"
+      ],
+      "interests": [
+        "Web Development"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Krishna Tatte",
+      "email": "krishnnna08@gmail.com",
+      "image": "https://images.app.goo.gl/h8gE9Xe5RBWCKZxn6",
+      "skills": [
+        "fdgbdn",
+        "gtgfr",
+        "bgbnthrt"
+      ],
+      "interests": [
+        "Mobile Development"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Krishna Tatte",
+      "email": "krishnnna08@gmail.com",
+      "image": "https://images.app.goo.gl/h8gE9Xe5RBWCKZxn6",
+      "skills": [
+        "bdfgbfnth",
+        "brstbdtnh",
+        "bdfgrbd"
+      ],
+      "interests": [
+        "AI/ML"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "CollabHub Platform",
+      "description": "Build a team collaboration platform",
+      "skills_needed": [
+        "Full-Stack",
+        "Design"
+      ],
+      "image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
+    },
+    {
+      "id": 2,
+      "title": "AI Chatbot",
+      "description": "Create an AI-powered customer support chatbot",
+      "skills_needed": [
+        "Python",
+        "NLP",
+        "ML"
+      ],
+      "image": "https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg"
+    }
+  ]
+}
